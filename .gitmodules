@@ -1,0 +1,3 @@
+[submodule "app/CSI-Camera"]
+	path = app/CSI-Camera
+	url = https://github.com/KittyEclipse/CSI-Camera.git
