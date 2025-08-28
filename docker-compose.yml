@@ -2,9 +2,9 @@ version: "3"
 
 services:
    app:
-      #image: ghcr.io/lanzani/mediapipe:l4t32.7.1-py3.10.11-ocv4.8.0-mp0.10.7
+      image: ghcr.io/lanzani/mediapipe:l4t32.7.1-py3.10.11-ocv4.8.0-mp0.10.7
       #image: ghcr.io/lanzani/mediapipe:l4t32.7.1-py3.8.0-ocv4.8.0-mp0.10.7
-      image: ghcr.io/lanzani/mediapipe:l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5
+      #image: ghcr.io/lanzani/mediapipe:l4t32.7.1-py3.6.9-ocv4.8.0-mp0.8.5
       stdin_open: true
       tty: true
       network_mode: host
