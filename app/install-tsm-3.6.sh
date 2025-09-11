@@ -4,19 +4,19 @@ TEMP_DIR=$(mktemp -d)
 pushd "$TEMP_DIR"
 
 apt update && apt-get install -y \
-	python3-pip
-	libopenblas-base
-	libopenmpi-dev
-	libomp-dev
-	libjpeg-dev
-	zlib1g-dev
-	libpython3-dev
-	libopenblas-dev
-	libavcodec-dev
-	libavformat-dev
-	libswscale-dev
-	llvm
-	protobuf-compiler
+	python3-pip \
+	libopenblas-base \
+	libopenmpi-dev \
+	libomp-dev \
+	libjpeg-dev \
+	zlib1g-dev \
+	libpython3-dev \
+	libopenblas-dev \
+	libavcodec-dev \
+	libavformat-dev \
+	libswscale-dev \
+	llvm \
+	protobuf-compiler \
 	libprotoc-dev
 
 wget https://nvidia.box.com/shared/static/fjtbno0vpo676a25cgvuqc1wty0fkkg6.whl -O torch-1.10.0-cp36-cp36m-linux_aarch64.whl

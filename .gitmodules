@@ -1,9 +1,6 @@
 [submodule "app/CSI-Camera"]
 	path = app/CSI-Camera
 	url = https://github.com/KittyEclipse/CSI-Camera.git
-[submodule "app/mediapipe-samples"]
-	path = app/mediapipe-samples
-	url = https://github.com/KittyEclipse/mediapipe-samples.git
 [submodule "app/temporal-shift-module"]
 	path = app/temporal-shift-module
 	url = https://github.com/KittyEclipse/temporal-shift-module.git

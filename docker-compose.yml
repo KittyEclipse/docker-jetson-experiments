@@ -8,6 +8,8 @@ services:
       stdin_open: true
       tty: true
       network_mode: host
+      #pid: host
+      privileged: true
       volumes:
       - /tmp/argus_socket:/tmp/argus_socket
       - /etc/enctune.conf:/etc/enctune.conf
@@ -21,6 +23,7 @@ services:
       - /dev/snd
       - /dev/bus/usb
       - /dev/video0
+      - /dev/gpiochip0
       environment:
       - DISPLAY=:0
       - XAUTHORITY=/tmp/.docker.xauth
