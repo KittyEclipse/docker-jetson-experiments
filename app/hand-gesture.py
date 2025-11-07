@@ -47,8 +47,8 @@ def is_bad_gesture(hand_landmarks):
 
 
 def gstreamer_pipeline(
-    capture_width=1280,
-    capture_height=720,
+    capture_width=1920,
+    capture_height=1080,
     display_width=960,
     display_height=540,
     framerate=30,
@@ -85,6 +85,7 @@ def main():
     # Set resolution to 1280x720
     #camera.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     #camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+    camera.read()
     
     mp_hands = mp.solutions.hands
     hands = mp_hands.Hands(static_image_mode=False, max_num_hands=1, min_detection_confidence=0.5, min_tracking_confidence=0.5)
